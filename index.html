@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+    <link rel='icon' href='assets/btf-logo.png' sizes="8x2" type='image/png'>
+
+    <title>Build the Future Decal</title>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="assets/fb-link-preview-img.png" />
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <div class="home-tab" onclick="window.scrollTo(0,0);"></div>
+            <div id="hamburger" onclick="menuControls()">
+                <button class;="hamburger-icon">
+            <div class="hambuger-bar"></div>
+            <div class="hambuger-bar"></div>
+            <div class="hambuger-bar"></div>
+          </button>
+                <div class="hamburger-menu">
+                    <div class="menu-element" onclick="scrollToSpeaker();">Speakers</div>
+                    <div class="menu-element" onclick="scrollToAssignments();">Assignments</div>
+                    <div class="menu-element" onclick="scrollToAbout();">About</div>
+                    <div class="menu-element" onclick="scrollToStaff();">Staff</div>
+                    <div class="menu-element" onclick="scrollToPolicies();">Policies</div>
+                    <a href="https://notes.thefuture.build/" target="_blank" style="color: black; font-size: 15px;">
+                        <div class="menu-element">Class Notes</div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-tab" onclick="scrollToSpeaker();">Speakers</div>
+                <div class="nav-tab" onclick="scrollToAssignments();">Assignments</div>
+                <div class="nav-tab" onclick="scrollToAbout();">About</div>
+                <div class="nav-tab" onclick="scrollToStaff();">Staff</div>
+                <div class="nav-tab" onclick="scrollToPolicies();">Policies</div>
+                <a href="https://notes.thefuture.build/" target="_blank" style="color: black; font-size: 15px;">
+                    <div class="nav-tab">Notes</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+
+        <div class="page" id="landing-page">
+            <div class="landing-text">
+                <div class="landing-page-header">
+                    <p class="header">CS198: Build the Future</p>
+                    <!-- <p class="subtitle">Leconte Hall Rm. 3</p>
+              <p class="subtitle">Tues and Thurs, 6:30PM-8:00PM</p> -->
+                </div>
+                <div class="landing-page-subheader">
+                    <p class="subtitle">Dwinelle 88 </p>
+                    <p class="subtitle">Thursdays 6:30-8:00p</p>
+                    <!-- <p class="subtitle">Berkeley's speaker series designed to teach and inspire students to build startups.</p> -->
+                    <a href="https://docs.google.com/forms/u/1/d/1a0SqGRGiwIHQTJxqDZF3K6XTMULf5a8GkkztHUvKM5Y/edit?usp=drive_open&fbclid=IwAR2lH3ols8Bt0PQB3TYu07Og-0BZs_Lc8v_-0RJIvq3HOM93yBi-tMSbXCc"><button class="landing-button">Apply here! →</button><a>
+           <button class="landing-button" onclick="scrollToSpeaker();">Fall 2019 Lineup →</button>
+            <!-- <p class="landing-fineprint">Sponsored by The House</p> -->
+          </div>
+        </div>
+        <div id="landing-img"></div>
+        <div class="landing-sponsored-text">
+          <p class="subtitle">Sponsored by:</p>
+        </div>
+        <div class="landing-sponsored-text">
+          <img src="assets/thehouse.png" class="img" id="thehouse-img"></img>
+        </div>
+      </div>
+
+
+      <div id="speaker-page">
+        <p class="subheader">Speakers</p>
+
+        <div class="calendar">
+
+          <div class="card">
+            <div class="card-img" id="cameron-baradar-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">5</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Cameron Baradar</p>
+                <p class="card-subheader">The House</p>
+                <p class="card-subheader">Founder & Partner</p>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-img" id="francesco-wiedemann-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">12</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Francesco Wiedemann</p>
+                <p class="card-subheader">KYTE</p>
+                <p class="card-subheader">Co-Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="amit-kumar-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">19</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Amit Kumar</p>
+                <p class="card-subheader">Accel</p>
+                <p class="card-subheader">Partner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="eli-luberoff-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Sep</p>
+                <p class="card-day">26</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Eli Luberoff</p>
+                <p class="card-subheader">Desmos</p>
+                <p class="card-subheader">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="boy-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">3</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Surprise!</p>
+                <p class="card-subheader">Come through!</p>
+                <p class="card-subheader">It'll be fun!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="laura-schewel-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">10</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Laura Schewel</p>
+                <p class="card-subheader">StreetLight Data</p>
+                <p class="card-subheader">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="prakash-janakiraman-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">17</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Prakash Janakiraman</p>
+                <p class="card-subheader">Nextdoor</p>
+                <p class="card-subheader">Co-Founder, Chief Architect</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="alex-maccaw-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Oct</p>
+                <p class="card-day">24</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Alex MacCaw</p>
+                <p class="card-subheader">Clearbit</p>
+                <p class="card-subheader">Founder & Hacker</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="card-img" id="mallika-chawla-img">
+            </div>
+            <div class="card-text">
+                <div class="card-date">
+                  <p class="card-month">Oct</p>
+                  <p class="card-day">31</p>
+                </div>
+                <div class="card-info">
+                  <p class="card-header">Mallika Chawla</p>
+                  <p class="card-subheader">Eat Makhana</p>
+                  <p class="card-subheader">Co-Founder and CEO</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="tracy-sun-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Nov</p>
+                <p class="card-day">7</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Tracy Sun</p>
+                <p class="card-subheader">Poshmark</p>
+                <p class="card-subheader">Co-Founder</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="card">
+            
+              <div class="card-img" id="girl-img">
+            </div>
+
+
+            <div class="card-text">
+                <div class="card-date">
+                  <p class="card-month">Nov</p>
+                  <p class="card-day">14</p>
+                </div>
+                <div class="card-info">
+                  <p class="card-header">Another surprise!</p>
+                  <p class="card-subheader">Exciting class!</p>
+                  <p class="card-subheader"></p>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-img" id="nicole-quinn-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Nov</p>
+                <p class="card-day">21</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Nicole Quinn</p>
+                <p class="card-subheader">Lightspeed Venture Partners</p>
+                <p class="card-subheader">Partner</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-img" id="tina-sharkey-img">
+            </div>
+            <div class="card-text">
+              <div class="card-date">
+                <p class="card-month">Dec</p>
+                <p class="card-day">5</p>
+              </div>
+              <div class="card-info">
+                <p class="card-header">Tina Sharkey</p>
+                <p class="card-subheader">Brandless</p>
+                <p class="card-subheader">Co-Founder and Chairperson</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      <div id="assignments-page">
+          <p class="subheader">Assignments</p>
+
+          <div class="assignments">
+
+            <div class="assignments-header-bar">
+              <div class="assignments-header" style="width: 51%;">Name</div>
+              <div class="assignments-header" style="width: 10.5%;">Assignment #</div>
+              <div class="assignments-header" style="width: 11.5%;">Due date</div>
+              <div class="assignments-header" >Submission</div>
+            </div>
+
+
+            <div class="assignment">
+              <p class="assignment-name">At the beginning of every week, we'll be emailing out assignments!</p>
+                    <div class="assignment-unit">-</div>
+                    <div class="assignment-date">-</div>
+                    <a href="" target="_blank">
+                        <div class="assignment-submission">
+                            <bold>--</bold>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page" id="about-page">
+
+            <div id="about-section">
+                <div class="subheader-div">
+                    <p class="subheader">About</p>
+                </div>
+                <div class="text-div">
+                    <p>There’s no better place to explore building a startup than during your time as a student at UC Berkeley. Surrounded by ambitious and talented people and industry-leading professors, there’s endless potential to create the next big
+                        thing. This course is designed to teach and inspire students to use their knowledge to build startups, and also to hear industry leaders come and talk to you about their process and journey, as well as answer any of your own questions.<br><br></p>
+                    <p>We will be going over the basic building blocks of a successful startup and connect this knowledge to emerging fields. Over the course of the semester, you will get into groups and go through the actual process of ideating and creating
+                        a startup idea that is intriguing to investors, culminating in a pitch to real venture capitalists! In addition, we will be providing an overview of the startup scene at Berkeley, pointing out resources ready to help students get
+                        a head start.<br><br></p>
+                    <p>The course meets one to two times per week (Thursdays and/or Tuesdays). The class will have speaker classes which will feature entrepreneurs who share their experiences and knowledge in a particular area of building a startup. It will
+                        also feature guest professors and introduce you to resources on campus to help you build your venture.[2 units].</p>
+                </div>
+            </div>
+            <div id="sponsors-section">
+                <div class="subheader-div">
+                    <p class="subheader">Sponsors</p>
+                </div>
+                <div class="text-div">
+                    <div class="img-strip">
+                        <img src="assets/citrisfoundry.png" class="img" id="citrisfoundry-img"></img>
+                        <img src="assets/freev.png" class="img" id="freev-img"></img>
+                        <img src="assets/bearfounders.png" class="img" id="bearfounders-img"></img>
+
+                    </div>
+                </div>
+            </div>
+            <div id="press-section">
+                <div class="subheader-div">
+                    <p class="subsubheader">Press</p>
+                </div>
+                <div class="text-div">
+                    <div class="img-strip">
+                        <a href="http://www.sfexaminer.com/best-silicon-valley-class-money-cant-buy/" target="_blank"><img src="assets/sfexaminer.png" class="img" id="sfexaminer-img"></img>
+                        </a>
+                        <a href="https://engineering.berkeley.edu/2017/03/origin-stories-house" target="_blank"><img src="assets/berkeleyeng.png" class="img" id="berkeleyeng-img"></img>
+                        </a>
+                        <a href="http://www.dailycal.org/2018/08/08/dream-build-start-exploring-uc-berkeleys-culture-entrepreneurship/" target="_blank"><img src="assets/dailycal.png" class="img" id="dailycal-img"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page" id="staff-page">
+            <div id="about-section">
+                <div class="subheader-div">
+                    <p class="subheader">Staff</p>
+                </div>
+                <div class="text-div staff">
+                    <p>Questions about the decal? Email <a href="mailto:btfdecal@gmail.com">btfdecal@gmail.com</a></p>
+                    <p>Faculty advisor: Joseph Hellerstein</p>
+                </div>
+            </div>
+
+            <div class="calendar">
+
+
+
+                <a href="http://www.aakashadesara.com/" target="_blank" class="card">
+                    <div class="card-img" id="aakash-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Aakash Adesara</p>
+                        <p class="card-subheader">aakashadesara@berkeley.edu</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/maitri-shah/" target="_blank" class="card">
+                    <div class="card-img" id="maitri-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Maitri Shah</p>
+                        <p class="card-subheader">maitrishah@berkeley.edu</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/daniel-andrews-965400111/" target="_blank" class="card">
+                    <div class="card-img" id="daniel-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Daniel Andrews</p>
+                        <p class="card-subheader">danielandrews@berkeley.edu</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/johnathanz/" target="_blank" class="card">
+                    <div class="card-img" id="johnathan-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Johnathan Zhou</p>
+                        <p class="card-subheader">johnathanz@berkeley.edu</p>
+                    </div>
+                </a>
+
+                <a class="card">
+                    <div class="card-img" id="danny-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Daniel (Danny) Ha</p>
+                        <p class="card-subheader">dannyhha@berkeley.edu</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/divsaksena/" target="_blank" class="card">
+                    <div class="card-img" id="divyansh-img">
+                    </div>
+                    <div class="card-text staff">
+                        <p class="card-header">Divyansh Saksena</p>
+                        <p class="card-subheader">divsaksena@berkeley.edu</p>
+                    </div>
+                </a>
+
+
+            </div>
+
+            <div class="page" id="policies-page">
+                <div class="subheader-div">
+                    <p class="subheader">Policies</p>
+                </div>
+                <div class="text-div">
+                    <p>This class has a strict P/NP criteria. If a student (A) misses more than 1 lecture (unexcused) OR (B) misses more than 2 lectures (excused) OR (C) fails to complete 70% of the assignments, they will fail. Everyone else passes. Additionally,
+                        Eventbrite tickets are necessary for attendance. Any attendance without an Eventbrite ticket will count as 0.75 of an attendance.</p>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
