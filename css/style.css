@@ -520,6 +520,14 @@ button>.hamburger-icon {
     margin-top: 40px;
 }
 
+/*
+#aakash-img {
+    background-image: url("../assets/aakash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
 #maitri-img {
     background-image: url("../assets/maitri.jpg");
     background-repeat: no-repeat;
@@ -534,15 +542,30 @@ button>.hamburger-icon {
     background-position: center;
 }
 
-#aakash-img {
-    background-image: url("../assets/aakash.jpg");
+#johnathan-img {
+    background-image: url("../assets/johnathan.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
 }
+*/
+
+#brandon-img {
+    background-image: url("../assets/brandon.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center -20px;
+}
+
+#chloe-img {
+    background-image: url("../assets/chloe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+}
 
 #danny-img {
-    background-image: url("../assets/danny.png");
+    background-image: url("../assets/danny.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -555,8 +578,8 @@ button>.hamburger-icon {
     background-position: center;
 }
 
-#johnathan-img {
-    background-image: url("../assets/johnathan.jpg");
+#shivam-img {
+    background-image: url("../assets/shivam.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -565,7 +588,8 @@ button>.hamburger-icon {
 
 /* ----- speakers images --- */
 
-#tina-sharkey-img {
+
+#tina-img {
     background-image: url("../assets/tina-sharkey.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
